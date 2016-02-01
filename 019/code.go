@@ -22,6 +22,7 @@ func main() {
 	end := time.Date(2000, 12, 31, 0, 0, 0, 0, time.UTC)
 	result := 0
 	for t.Before(end) {
+		// weekday() == 6 is Sunday
 		if int(t.Weekday()) == 6 {
 			result += 1
 		}
